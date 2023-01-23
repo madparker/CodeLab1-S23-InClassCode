@@ -1,5 +1,3 @@
-# FILL IN INFO ABOUT YOUR GAME HERE. 
+# This is the repo for the in class code for Code Lab 1, Spring 2023
 
-DO NOT LEAVE IT LIKE THIS!!!
-
-Please? Please, give me content. I'm begging you. It's not that hard. Thanks.
+Come here to see all the code that Matt wrote in class. Yay!
