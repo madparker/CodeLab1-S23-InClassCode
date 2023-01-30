@@ -2,10 +2,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class PrizeScript : MonoBehaviour
 {
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,10 @@ public class PrizeScript : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        SceneManager.LoadScene(1);
+        transform.position = new Vector2(
+            Random.Range(-5f, 5f),
+            Random.Range(-5f, 5f));
+
+        GameManager.Instance.score++;
     }
 }

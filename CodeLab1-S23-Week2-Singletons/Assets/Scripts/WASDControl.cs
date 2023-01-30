@@ -5,13 +5,23 @@ using UnityEngine;
 
 public class WASDControl : MonoBehaviour
 {
+    public static WASDControl Instance;
+    
     Rigidbody2D rb2d;
 
     public float forceAmount = 60;
 
     void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        if (Instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Start is called before the first frame update
