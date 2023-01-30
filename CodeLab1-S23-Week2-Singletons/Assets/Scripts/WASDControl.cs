@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,7 +8,12 @@ public class WASDControl : MonoBehaviour
     Rigidbody2D rb2d;
 
     public float forceAmount = 60;
-    
+
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,5 +27,23 @@ public class WASDControl : MonoBehaviour
         {
             rb2d.AddForce(Vector2.up * forceAmount);
         }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            rb2d.AddForce(Vector2.left * forceAmount);
+        }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            rb2d.AddForce(Vector2.down * forceAmount);
+        }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            rb2d.AddForce(Vector2.right * forceAmount);
+        }
+
+        rb2d.velocity *= 0.999f;
+
     }
 }
