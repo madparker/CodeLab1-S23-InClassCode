@@ -25,6 +25,6 @@ public class PrizeScript : MonoBehaviour
             Random.Range(-5f, 5f),
             Random.Range(-5f, 5f));
 
-        GameManager.Instance.score++;
+        GameManager.Instance.Score++;
     }
 }
