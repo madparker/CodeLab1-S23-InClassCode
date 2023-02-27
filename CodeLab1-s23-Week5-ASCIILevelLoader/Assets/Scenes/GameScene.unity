@@ -442,9 +442,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8571317211898346188, guid: fe56809a689f34897946f029ce7cdb91,
         type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 8565018190345654635, guid: 58d16b351044f4d888a6046fd34be2c0,
+        type: 3}
+    - target: {fileID: 8571317211898346188, guid: fe56809a689f34897946f029ce7cdb91,
+        type: 3}
       propertyPath: wall
       value: 
       objectReference: {fileID: 6635122519656044758, guid: c180816b9d2ac4fb0a25c8f3de597a1a,
+        type: 3}
+    - target: {fileID: 8571317211898346188, guid: fe56809a689f34897946f029ce7cdb91,
+        type: 3}
+      propertyPath: spike
+      value: 
+      objectReference: {fileID: 4842091639485134516, guid: 1ccafedaabfbb48abb54dd9c0875af81,
         type: 3}
     - target: {fileID: 8571317211898346188, guid: fe56809a689f34897946f029ce7cdb91,
         type: 3}
@@ -455,7 +467,7 @@ PrefabInstance:
     - target: {fileID: 8571317211898346188, guid: fe56809a689f34897946f029ce7cdb91,
         type: 3}
       propertyPath: xOffset
-      value: -2
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 8571317211898346188, guid: fe56809a689f34897946f029ce7cdb91,
         type: 3}
