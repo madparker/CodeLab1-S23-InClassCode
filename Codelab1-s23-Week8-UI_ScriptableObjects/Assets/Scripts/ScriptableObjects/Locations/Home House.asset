@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10d9f7a97912b437c8c3adde923009d0, type: 3}
+  m_Name: Home House
+  m_EditorClassIdentifier: 
+  locationName: Your House
+  locationDescription: A very nice place to live.
+  northLocation: {fileID: 11400000, guid: 2a9d0cf5e3c87463b83db1bf5477c098, type: 2}
+  southLocation: {fileID: 11400000, guid: 28fd1d5ab39c7436484b1806eab49680, type: 2}
+  eastLocation: {fileID: 11400000, guid: d25dd94b03af04702ba78aa22f6f6bc3, type: 2}
+  westLocation: {fileID: 11400000, guid: 37bff4d88cd284161bc0eea7e36e9847, type: 2}
