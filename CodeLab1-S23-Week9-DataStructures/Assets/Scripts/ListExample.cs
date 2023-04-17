@@ -40,7 +40,7 @@ public class ListExample : MonoBehaviour
 
         for (int i = 0; i < namesList.Count; i++)
         {
-            if (namesList[i] == "LANNI")
+            if (namesList[i].Equals("LANNI"))
                 indexOfLastLanni = i;
         }
        

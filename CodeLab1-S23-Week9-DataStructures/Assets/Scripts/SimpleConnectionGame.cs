@@ -174,15 +174,24 @@ public class SimpleConnectionGame : MonoBehaviour
                         return grid[x, y];
              
                 if (x <= width - 4)               
-                    if (grid[x,y] != 0 && grid[x, y] == grid[x + 1, y] && grid[x, y] == grid[x + 2, y] && grid[x, y] == grid[x + 3, y])
+                    if (grid[x,y] != 0 && 
+                        grid[x, y] == grid[x + 1, y] && 
+                        grid[x, y] == grid[x + 2, y] && 
+                        grid[x, y] == grid[x + 3, y])
                         return grid[x, y];
 
                 if (x <= width - 4 && y <= height - 4)
-                    if (grid[x,y] != 0 && grid[x, y] == grid[x + 1, y + 1] && grid[x, y] == grid[x + 2, y + 2] && grid[x, y] == grid[x + 3, y + 3])
+                    if (grid[x,y] != 0 && 
+                        grid[x, y] == grid[x + 1, y + 1] && 
+                        grid[x, y] == grid[x + 2, y + 2] && 
+                        grid[x, y] == grid[x + 3, y + 3])
                         return grid[x, y];
 
-                if (x >= width - 4 && y <= height - 4)
-                    if (grid[x,y] != 0 && grid[x, y] == grid[x - 1, y + 1] && grid[x, y] == grid[x - 2, y + 2] && grid[x, y] == grid[x - 3, y + 3])
+                if (x >= 3 && y <= height - 4)
+                    if (grid[x,y] != 0 && 
+                        grid[x, y] == grid[x - 1, y + 1] && 
+                        grid[x, y] == grid[x - 2, y + 2] && 
+                        grid[x, y] == grid[x - 3, y + 3])
                         return grid[x, y];
             }
         }

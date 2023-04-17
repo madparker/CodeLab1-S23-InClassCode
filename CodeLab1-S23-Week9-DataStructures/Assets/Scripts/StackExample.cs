@@ -61,12 +61,13 @@ public class StackExample : MonoBehaviour
         else
         {
             // Display the timer
-            display.text = (timePerTurn - timer).ToString("F2");
+            display.text = (timePerTurn - timer).ToString("F1");
         }
     }
 
     private void ShowCardStack()
     {
+        
         // While there are effects in the stack, pop them out and show them.
         while (effects.Count > 0)
             display.text += "\n" + effects.Pop();

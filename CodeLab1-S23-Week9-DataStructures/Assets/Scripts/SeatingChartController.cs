@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class SeatingChartController : MonoBehaviour
 {
-    private int numRows = 5;
-    private int numCols = 4;
+    private int numRows = 4;
+    private int numCols = 8;
 
     private string[,] seatingChart;
 
@@ -24,20 +24,23 @@ public class SeatingChartController : MonoBehaviour
             }
         }
 
-        seatingChart[0, 0] = "Wei Kang";
-        seatingChart[2, 2] = "Amber";
-        seatingChart[1, 3] = "Jay";
-        seatingChart[3, 1] = "Mo";
-        seatingChart[0, 3] = "Kaitlin";
-        seatingChart[2, 3] = "Ina";
-        seatingChart[1, 1] = "Alessia";
-        seatingChart[0, 4] = "Joy";
-        seatingChart[3, 4] = "Laura";
-        seatingChart[3, 3] = "Yanxi";
-        seatingChart[3, 2] = "Walid";
-        seatingChart[2, 1] = "Nate";
-        seatingChart[1, 2] = "Beau";
-        seatingChart[0, 2] = "George";
+        seatingChart[7, 0] = "DF";
+        seatingChart[0, 1] = "JV";
+        seatingChart[2, 1] = "XC";
+        seatingChart[4, 1] = "DW";
+        seatingChart[5, 1] = "IL";
+        seatingChart[6, 1] = "XH";
+        seatingChart[7, 1] = "SH";
+        seatingChart[0, 2] = "JH";
+        seatingChart[7, 2] = "BZ";
+        seatingChart[0, 3] = "YB";
+        seatingChart[1, 3] = "AX";
+        seatingChart[2, 3] = "HW";
+        seatingChart[4, 3] = "JD";
+        seatingChart[5, 3] = "LY";
+        seatingChart[6, 3] = "EC";
+        seatingChart[7, 3] = "TW";
+        
         
 
         PrintWhereSeated();
@@ -52,7 +55,7 @@ public class SeatingChartController : MonoBehaviour
             {
                 if (seatingChart[x, y] != "")
                 {
-                    toPrint += " X ";
+                    toPrint += seatingChart[x, y] + "_";
                 }
                 else
                 {

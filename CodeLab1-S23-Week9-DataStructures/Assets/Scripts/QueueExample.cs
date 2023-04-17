@@ -65,6 +65,7 @@ public class QueueExample : MonoBehaviour
 
     private void ShowQueueEffects()
     {
+        
         // While there are effects in the queue, dequeue them out and show them.
         while (fishQueue.Count > 0)
             display.text += "\n" + fishQueue.Dequeue();
