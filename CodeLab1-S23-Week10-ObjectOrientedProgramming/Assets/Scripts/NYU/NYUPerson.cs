@@ -9,6 +9,13 @@ public class NYUPerson
     public string netId;
     public string type;
 
+    public NYUPerson()
+    {
+        name = "Insert Name";
+        netId = "aa000";
+        type = "NYU Person";
+    }
+
     //this is the base constructor
     public NYUPerson(string name, string netId)
     {
