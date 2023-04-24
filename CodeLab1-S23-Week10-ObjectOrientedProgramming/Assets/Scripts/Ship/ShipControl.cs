@@ -14,8 +14,8 @@ public class ShipControl : MonoBehaviour
     public float health = 100;
     public TextMesh healthText;
 
-    BaseAttack attack;
-    BaseShield shield;
+    public BaseAttack attack;
+    public BaseShield shield;
 
     // Start is called before the first frame update
     void Start()
@@ -27,10 +27,10 @@ public class ShipControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        attack = GetComponent<BaseAttack>();
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            attack = GetComponent<BaseAttack>();
             attack.Attack();
         }
 
@@ -41,12 +41,6 @@ public class ShipControl : MonoBehaviour
         if (Input.GetKey(rightKey)){ //move right
             rb2d.AddForce(Vector2.right * forceMod);
         }
-
-        if (Input.GetKeyDown(KeyCode.B)) //change to BaseShield
-        {
-            Destroy(shield);
-            shield = gameObject.AddComponent<BaseShield>();
-        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -55,8 +49,11 @@ public class ShipControl : MonoBehaviour
         TakeDamage(20); //call take damage
     }
 
-    public void TakeDamage(float damageAmt){
+    public void TakeDamage(float damageAmt)
+    {
 
+        shield = GetComponent<BaseShield>();
+        
         if (shield != null) // if you have a shield
         {
             damageAmt = shield.AdjustDamage(damageAmt); //adjust the damage by the sheild amount
