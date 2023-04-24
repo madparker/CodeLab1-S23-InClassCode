@@ -31,7 +31,11 @@ public class ShipControl : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             attack = GetComponent<BaseAttack>();
-            attack.Attack();
+
+            if (attack != null)
+            {
+                attack.Attack();
+            }
         }
 
         if(Input.GetKey(leftKey)){ //move left

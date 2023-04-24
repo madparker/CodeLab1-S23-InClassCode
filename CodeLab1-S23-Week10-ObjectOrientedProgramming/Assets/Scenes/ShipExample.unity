@@ -132,8 +132,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 435983650}
-  - component: {fileID: 435983655}
-  - component: {fileID: 435983654}
+  - component: {fileID: 435983658}
+  - component: {fileID: 435983657}
   - component: {fileID: 435983648}
   - component: {fileID: 435983656}
   - component: {fileID: 435983649}
@@ -280,33 +280,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &435983654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 435983647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7a0350a3db5641a2bd3bd5ae02f7f63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shieldStrength: 50
---- !u!114 &435983655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 435983647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 380288edb3d734b37b33baa458866422, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 4200488364815117268, guid: 5300849b115cc4c7e94fe98f7c664300,
-    type: 3}
 --- !u!114 &435983656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,6 +293,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipControl: {fileID: 435983648}
+--- !u!114 &435983657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435983647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1ae9eda588a4c0fb5078c45a6b327b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shieldStrength: 50
+  teleportRange: 5
+--- !u!114 &435983658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435983647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cb33dade60b84a3ab9d68c4fedd9f9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 4200488364815117268, guid: 5300849b115cc4c7e94fe98f7c664300,
+    type: 3}
 --- !u!1 &972661334
 GameObject:
   m_ObjectHideFlags: 0

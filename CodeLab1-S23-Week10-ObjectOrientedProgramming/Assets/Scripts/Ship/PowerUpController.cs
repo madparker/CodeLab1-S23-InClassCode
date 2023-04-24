@@ -20,5 +20,11 @@ public class PowerUpController : MonoBehaviour
             Destroy(shipControl.shield);
             gameObject.AddComponent<BaseShield>();
         }
+
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            Destroy(shipControl.shield);
+            gameObject.AddComponent<DividerShield>();
+        }
     }
 }

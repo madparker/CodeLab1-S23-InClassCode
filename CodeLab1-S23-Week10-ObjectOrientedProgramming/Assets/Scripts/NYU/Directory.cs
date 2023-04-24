@@ -28,10 +28,14 @@ public class Directory : MonoBehaviour
 
         NYUPerson andy = new NYUStaff("Andy Hamilton",
             "ah0001", 2000000);
+
+        NYUPerson samira = new NYUGradStudent("Samira", "sh123",
+            10.0f, 18, "MFA");
         
         nyuPeopleList.Add(mattParker); //add mattParker to the nyuPeopleList
         nyuPeopleList.Add(diane);
         nyuPeopleList.Add(andy);
+        nyuPeopleList.Add(samira);
         
         UpdateRecord(); //update the text display to show the the info from the first person in the list
     }
