@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,6 +16,7 @@ public class BulletScript : MonoBehaviour
         if(transform.position.y > MAX_Y){ //if the bullet has moved to far up
             BulletPool.instance.Push(gameObject);  //return it to the pool
         }
+
     }
 
     //used to reset the bullet after you recycle it

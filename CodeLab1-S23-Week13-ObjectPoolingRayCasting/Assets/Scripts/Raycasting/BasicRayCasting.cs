@@ -32,14 +32,14 @@ public class BasicRayCasting : MonoBehaviour
 
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             
-            if (Physics.Raycast(ray, out hit)) //simple raycast
+            //if (Physics.Raycast(ray, out hit)) //simple raycast
             //if (Physics.Raycast(ray, out hit, 10)) //on gets colliders 10 units or less away
             
             // more detailed Raycast, for more info: https://docs.unity3d.com/ScriptReference/Physics.Raycast.html
-            //if (Physics.Raycast(ray.origin, ray.direction, out  hit, 10, GetLayerMask(3), QueryTriggerInteraction.Ignore))
+            //if (Physics.Raycast(ray.origin, ray.direction, out hit, 10, GetLayerMask(3), QueryTriggerInteraction.Ignore))
             
             //Sphere cast, similar to RayCast, but a more forgiving
-            //if (Physics.SphereCast(ray.origin, 1, ray.direction, out hit, 10))
+            if (Physics.SphereCast(ray.origin, 1, ray.direction, out hit, 10))
             {
                 WhenClickedOn(hit.collider.gameObject);
             }
